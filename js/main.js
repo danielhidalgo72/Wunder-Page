@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const navContainer = document.querySelector(".nav-container");
     const contenido = document.getElementById("contenido");
 
-    // Usamos event delegation en el contenedor del nav
     navContainer.addEventListener("click", function(event) {
         const item = event.target;
         if (item.classList.contains("nav-item")) {
@@ -37,10 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     fileName = "faq.html";
                     break;
                 default:
-                    return; // No hacer nada si no es un nav-item válido
+                    return;
             }
 
-            // Cargar el contenido del archivo HTML
             fetch(`../html/${fileName}`)
                 .then(response => response.text())
                 .then(data => {
@@ -55,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const mobileNavContainer = document.querySelector(".mobile-nav");
 
-    // Usamos event delegation en el contenedor del nav
     mobileNavContainer.addEventListener("click", function(event) {
         const item = event.target;
         if (item.classList.contains("nav-item")) {
@@ -74,10 +71,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     fileName = "faq.html";
                     break;
                 default:
-                    return; // No hacer nada si no es un nav-item válido
+                    return;
             }
 
-            // Cargar el contenido del archivo HTML
             fetch(`../html/${fileName}`)
                 .then(response => response.text())
                 .then(data => {

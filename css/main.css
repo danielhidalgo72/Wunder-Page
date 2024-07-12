@@ -79,7 +79,7 @@
 
     .button-contacto-header {
         width: 20%;
-        height: 4.8vw;
+        height: 6.8vw;
         position: relative;
         left: 40%;
         background: linear-gradient(101deg, #638638 0%, #C6D54F 69%);
@@ -250,6 +250,7 @@
         justify-content: center;
         align-items: center;
     }
+    
     .marquee-content {
         display: inline-block;
         padding-left: 100%;
@@ -295,8 +296,8 @@
     .marquee-content-logos {
         display: flex;
         width: 200%;
-        animation: marquee 20s linear infinite;
-        gap: 3%;
+        animation: marquee 25s linear infinite;
+        gap: 2%;
     }
     
     .marquee-content-logos img {
@@ -346,7 +347,7 @@
     .contact-text {
         text-align: center;
         color: white;
-        font-size: 1.5vw;
+        font-size: 1.0vw;
         font-weight: 500;
         line-height: 2vw;
     }
@@ -433,9 +434,9 @@
         display: inline-block;
         gap: 1%;
         color: #201F23;
-        font-size: 2vw;
+        font-size: 1.6vw;
         font-weight: 400;
-        line-height: 3vw;
+        line-height: 2.5vw;
     }
 
     .description-nuestro-servicio .bold {
@@ -457,7 +458,7 @@
     }
     
     .imagen_home1 {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 
@@ -469,7 +470,7 @@
         bottom: 10%;
         /* color: #A1B356; */
         color: #D4E07B;
-        font-size: 2.2vw;
+        font-size: 2.0vw;
         font-weight: 500;
         line-height: 4vw;
     }
@@ -586,12 +587,12 @@
     .marquee-content-logos {
         display: flex;
         width: 200%;
-        animation: marquee 20s linear infinite;
-        gap: 3%;
+        animation: marquee 60s linear infinite;
+        gap: 1%;
     }
     
     .marquee-content-logos img {
-        width: 300px;
+        width: 150px;
         height: auto;
         margin: 0 10px;
     }
@@ -603,6 +604,87 @@
         100% {
             transform: translateX(100%);
         }
+    }
+    
+    .services-container {
+        width: 100%;
+        height: 40vw;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+    }
+    
+    .services-heading {
+        width: 100%;
+        text-align: center;
+        color: #101011;
+        font-size: 4.2vw;
+        font-weight: 700;
+        line-height: 4vw;
+        word-wrap: break-word;
+    }
+    
+    .service-description-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .service-icon {
+        width: 1.5vw;
+        height: 1.5vw;
+        transform: scale(6.5);
+        transform-origin: center center;
+    }
+    
+    .service-description {
+        width: 100%;
+        max-width: 410px;
+        text-align: center;
+        color: #101011;
+        font-size: 1.0vw;
+        font-weight: 600;
+        line-height: 1.4;
+    }    
+    
+    .commitment-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 38px;
+    }
+    
+    .commitment-heading {
+        width: 865px;
+        text-align: center;
+    }
+    
+    .commitment-heading span {
+        color: #101011;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 62.40px;
+        word-wrap: break-word;
+    }
+    
+    .commitment-heading .highlight-text {
+        color: #1A9DD9;
+    }
+    
+    .commitment-text {
+        width: 876px;
+        text-align: center;
+        color: #575957;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        word-wrap: break-word;
     }
     
 }
