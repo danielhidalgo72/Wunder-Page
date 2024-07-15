@@ -275,6 +275,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap: 15%;
     }
 
     .container-clientes span{
@@ -285,7 +286,7 @@
     }
     
     .marquee-logos {
-        padding-top: 60px;
+        padding-top: 3.125vw;
         width: 200%;
         height: auto;
         overflow: hidden;
@@ -302,7 +303,7 @@
     
     .marquee-content-logos img {
         width: 100px;
-        height: auto;
+        height: 30px;
         margin: 0 10px;
     }
     
@@ -313,6 +314,87 @@
         100% {
             transform: translateX(100%);
         }
+    }
+
+    .services-container {
+        width: 100%;
+        height: 40vw;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+    }
+    
+    .services-heading {
+        width: 100%;
+        text-align: center;
+        color: #101011;
+        font-size: 4.5vw;
+        font-weight: 700;
+        line-height: 4vw;
+        word-wrap: break-word;
+    }
+    
+    .service-description-container {
+        width: 50%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .service-icon {
+        width: 2.5vw;
+        height: 2.5vw;
+        transform: scale(6.5);
+        transform-origin: center center;
+    }
+    
+    .service-description {
+        width: 100%;
+        max-width: 410px;
+        text-align: center;
+        color: #101011;
+        font-size: 2.0vw;
+        font-weight: 600;
+        line-height: 1.4;
+    }    
+    
+    .commitment-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2%;
+    }
+    
+    .commitment-heading {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .commitment-heading span {
+        color: #101011;
+        font-size: 4vw;
+        font-weight: 500;
+        line-height: 6vw;
+        word-wrap: break-word;
+    }
+    
+    .commitment-heading .highlight-text {
+        color: #1A9DD9;
+    }
+    
+    .commitment-text {
+        width: 90%;
+        text-align: center;
+        color: #575957;
+        font-size: 2.2vw;
+        font-weight: 400;
+        line-height: 6vw;
+        word-wrap: break-word;
     }
 }
 
@@ -576,7 +658,7 @@
     }
     
     .marquee-logos {
-        padding-top: 60px;
+        padding-top: 3.125vw;
         width: 200%;
         height: auto;
         overflow: hidden;
@@ -592,8 +674,8 @@
     }
     
     .marquee-content-logos img {
-        width: 150px;
-        height: auto;
+        width: 200px;
+        height: 60px;
         margin: 0 10px;
     }
     
@@ -605,6 +687,8 @@
             transform: translateX(100%);
         }
     }
+
+    /* ******* nuestros servicios ******* */
     
     .services-container {
         width: 100%;
@@ -620,7 +704,7 @@
         width: 100%;
         text-align: center;
         color: #101011;
-        font-size: 4.2vw;
+        font-size: 2.5vw;
         font-weight: 700;
         line-height: 4vw;
         word-wrap: break-word;
@@ -628,6 +712,7 @@
     
     .service-description-container {
         width: 100%;
+        left: 1%;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -657,19 +742,19 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        gap: 38px;
+        gap: 2%;
     }
     
     .commitment-heading {
-        width: 865px;
+        width: 60%;
         text-align: center;
     }
     
     .commitment-heading span {
         color: #101011;
-        font-size: 48px;
+        font-size: 3vw;
         font-weight: 500;
-        line-height: 62.40px;
+        line-height: 4vw;
         word-wrap: break-word;
     }
     
@@ -678,12 +763,287 @@
     }
     
     .commitment-text {
-        width: 876px;
+        width: 60%;
         text-align: center;
         color: #575957;
-        font-size: 20px;
+        font-size: 1.2vw;
         font-weight: 400;
-        line-height: 28px;
+        line-height: 4vw;
+        word-wrap: break-word;
+    }
+    
+    .container-descripcion-servicios {
+        position: relative;
+        width: 100%;
+        height: 40vw;
+    }
+    .background-descripcion-servicios.softlab {
+        width: 94%;
+        height: 33vw;
+        position: absolute;
+        background: linear-gradient(90deg, #004891 0%, #1A9DD9 100%);
+        border-radius: 0.833vw;
+        top: 0;
+        left: -1.771vw;
+    }
+    .background-descripcion-servicios.nube {
+        width: 94%;
+        height: 33vw;
+        position: absolute;
+        background: linear-gradient(90deg, #A37CB3 0%, #662480 100%);
+        border-radius: 0.833vw;
+        top: 0;
+        left: -1.771vw;
+    }
+    .background-descripcion-servicios.ciberseguridad {
+        width: 94%;
+        height: 33vw;
+        position: absolute;
+        background: linear-gradient(90deg, #0C296A 0%, #6E5CBE 100%);
+        border-radius: 0.833vw;
+        top: 0;
+        left: -1.771vw;
+    }
+    .background-descripcion-servicios.nearshoring {
+        width: 94%;
+        height: 33vw;
+        position: absolute;
+        background: linear-gradient(90deg, #E3732D 0%, #F6CD39 100%);
+        border-radius: 0.833vw;
+        top: 0;
+        left: -1.771vw;
+    }
+    .menu-descripcion-servicios {
+        position: absolute;
+        left: 8.49vw;
+        top: 16%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.579vw;
+    }
+    .menu-item-descripcion-servicios {
+        width: 17.604vw;
+        height: 3.474vw;
+        position: relative;
+        border-radius: 1.737vw;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 0.521vw;
+        transition: background-color 0.3s, opacity 0.3s;
+    }
+    .menu-item-descripcion-servicios img {
+        width: 1.25vw;
+        height: 1.25vw;
+        margin-right: 0.521vw;
+    }
+    .menu-item-descripcion-servicios .text {
+        font-size: 1.5vw;
+        font-weight: 400;
+        line-height: 34.24px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-item-softlab { background: rgba(255, 255, 255, 0.15); color: white; }
+    .menu-item-softlab.active { background: white; color: #024D95; }
+    .menu-item-nube { background: rgba(255, 255, 255, 0.15); color: white; }
+    .menu-item-nube.active { background: white; color: #662480; }
+    .menu-item-ciberseguridad { background: rgba(255, 255, 255, 0.15); color: white; }
+    .menu-item-ciberseguridad.active { background: white; color: #21428F; }
+    .menu-item-nearshoring { background: rgba(255, 255, 255, 0.15); color: white; }
+    .menu-item-nearshoring.active { background: white; color: #F6A500; }
+
+    .content-descripcion-servicios {
+        width: 45%;
+        height: 30vw;
+        padding: 43px 37px 24px 3.125vw;
+        position: absolute;
+        background: white;
+        box-shadow: 7px 8px 26.1px -13px rgba(18, 17, 11, 0.31);
+        border-radius: 0.833vw;
+        top: 3.125vw;
+        left: 35%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 8%;
+    }
+    .content-descripcion-servicios h2 {
+        color: #1A9DD9;
+        font-size: 2.9vw;
+        font-weight: 700;
+        margin: 0;
+    }
+    .content-descripcion-servicios .subheading {
+        font-size: 2vw;
+        font-weight: 500;
+        color: #201F23;
+    }
+    .content-descripcion-servicios p {
+        font-size: 1.7vw;
+        font-weight: 400;
+        color: #575957;
+    }
+
+    .services-container-2 {
+        width: 100%;
+        height: 40vw;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .button-saber-mas-servicios {
+        width: 12%;
+        height: 4vw;
+        position: absolute;
+        top: 15%;
+        background: linear-gradient(101deg, #638638 0%, #C6D54F 69%);
+        border-radius: 41.97px;
+        border: 0px;
+        color: white;
+        font-size: 1.4vw;
+        font-weight: 500;
+        line-height: 3vw;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .text-container-services2 {
+        width: 90vw;
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        display: inline-flex;
+        position: relative;
+        top: 80%;
+    }
+    
+    .text-black-services2, 
+    .text-blue-services2 {
+        font-size: 3.5vw;
+        font-weight: 500;
+        line-height: 4vw;
+        word-wrap: break-word;
+    }
+    
+    .text-black-services2 {
+        color: #101011;
+    }
+    
+    .text-blue-services2 {
+        color: #3CACDF;
+    }
+
+    .commitment-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2%;
+    }
+
+    .relative-container-services2 {
+        width: 50%;
+        height: 7vw;
+        position: relative;
+        top: 100%;
+        border-radius: 20px;
+        border: 2px #AFDDF2 solid;
+    }
+    
+    .absolute-container-services2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .service-info-services2 {
+        width: 20vw;
+        height: 100%;
+        position: absolute;
+        top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .text-right-services2 {
+        text-align: right;
+    }
+    
+    .service-description-services2 {
+        width: 30vw;
+        height: 90%;
+        position: absolute;
+        left: 40%;
+        top: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .circle-container-services2 {
+        width: 2vw;
+        height: 2vw;
+        position: absolute;
+        left: 39%;
+        top: 30%;
+    }
+    
+    .outer-circle-services2 {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        border-radius: 50%;
+        border: 0.4vw #A3D8F0 solid;
+    }
+    
+    .inner-circle-services2 {
+        width: 1vw;
+        height: 1vw;
+        position: absolute;
+        left: 38%;
+        top: 39%;
+        background: #AFDDF2;
+        border-radius: 50%;
+    }
+
+    .text-black-services2-dividido {
+        color: #101011;
+        font-size: 1.4vw;
+        font-weight: 500;
+        line-height: 2vw;
+        word-wrap: break-word;
+    }
+    
+    .text-blue-services2-dividido {
+        color: #3CACDF;
+        font-size: 1.4vw;
+        font-weight: 500;
+        line-height: 2vw;
+        word-wrap: break-word;
+    }
+
+    .text-black-services2-dividido-right {
+        color: #101011;
+        font-size: 1.0vw;
+        font-weight: 500;
+        line-height: 2vw;
+        word-wrap: break-word;
+    }
+    
+    .text-bold-black-services2 {
+        color: #101011;
+        font-size: 1.0vw;
+        font-weight: 700;
+        line-height: 2vw;
         word-wrap: break-word;
     }
     
