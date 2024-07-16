@@ -47,7 +47,7 @@
         align-items: center;
         background: white;
         position: absolute;
-        top: 8vh;
+        top: 12vw;
         left: 0;
         width: 100%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -72,7 +72,7 @@
 
     #logo_wundertec {
         width: auto;
-        max-height: 8vh;
+        max-height: 14vw;
         position: relative;
         left: 10%;
     }
@@ -104,7 +104,7 @@
 
     .container-nuestro-servicio {
         width: 100%;
-        height: 70vh;
+        height: 150vw;
         position: relative;
         background: linear-gradient(175deg, white 30%, #D4E07B 82%);
     }
@@ -163,7 +163,7 @@
         flex-direction: column;
         align-items: flex-start;
         left: 30%;
-        top: 40%;
+        top: 45%;
     }
 
     .imagen_home1 {
@@ -177,7 +177,7 @@
         position: absolute;
         left: 0%;
         bottom: 15%;
-        /* color: #A1B356; */
+        color: #A1B356;
     }
 
     .button-contacto {
@@ -245,7 +245,6 @@
         height: 40px;
         overflow: hidden;
         white-space: nowrap;
-        background: linear-gradient(to right, transparent, #b7c64a 10%, #b7c64a 90%, transparent);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -256,20 +255,47 @@
         padding-left: 100%;
         animation: marquee 13s linear infinite;
         white-space: nowrap;
-        width: 40%;
+        width: 50%;
         height: auto;
-        left: 60%;
-        color: #D4E07B;
         font-size: 4.2vw;
         font-weight: 500;
         line-height: 4vw;
+    }
+
+    .marquee-container::before,
+    .marquee-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 25%;
+        z-index: 2;
+    }
+
+    .marquee-container::before {
+        left: 0;
+        background: linear-gradient(to right, #D4E07B, rgba(255, 255, 255, 0));
+    }
+
+    .marquee-container::after {
+        right: 0;
+        background: linear-gradient(to left, #D4E07B, rgba(255, 255, 255, 0));
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(10%);
+        }
+        100% {
+            transform: translateX(-150%);
+        }
     }
 
     /* ******* clientes ******* */
 
     .container-clientes{
         width: 100%;
-        height: 30vh;
+        height: 30vw;
         position: relative;
         display: flex;
         justify-content: center;
@@ -401,7 +427,7 @@
 /* Estilos específicos para dispositivos de escritorio */
 @media (min-width: 601px) {
     .header-container {
-        height: 10vh;
+        height: 10vw;
         padding: 0 5%;
     }
 
@@ -418,12 +444,13 @@
     }
 
     .contact-container {
-        padding: 1vh 2vw;
+        padding: 1vw 2vw;
         background: linear-gradient(101deg, #638638 0%, #C6D54F 69%);
         border-radius: 41.97px;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 1vw;
     }
     
     .contact-text {
@@ -444,7 +471,7 @@
         align-items: center;
         background: white;
         position: absolute;
-        top: 10vh;
+        top: 10vw;
         left: 0;
         width: 100%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -463,12 +490,12 @@
 
     #logo_wundertec {
         width: auto;
-        max-height: 8vh;
+        max-height: 8vw;
         position: relative;
     }
 
     .contact-container {
-        padding: 1vh 2vw;
+        padding: 1vw 2vw;
     }
 
     /* ************************** nosotros.html ************************** */
@@ -478,7 +505,7 @@
 
     .container-nuestro-servicio {
         width: 100%;
-        height: 75vh;
+        height: 40vw;
         position: relative;
         background: linear-gradient(175deg, white 30%, #D4E07B 82%);
     }
@@ -550,8 +577,7 @@
         position: absolute;
         left: 60%;
         bottom: 10%;
-        /* color: #A1B356; */
-        color: #D4E07B;
+        color: #A1B356;
         font-size: 2.0vw;
         font-weight: 500;
         line-height: 4vw;
@@ -621,7 +647,6 @@
         width: 100%;
         overflow: hidden;
         white-space: nowrap;
-        background: linear-gradient(to right, transparent, #b7c64a 10%, #b7c64a 100%, transparent);
     }
 
     .marquee-content {
@@ -631,18 +656,47 @@
         white-space: nowrap;
         width: 100%;
         height: auto;
-        left: 60%;
+        left: 50%;
         top: 80%;
         font-size: 2.2vw;
         font-weight: 500;
         line-height: 4vw;
     }
 
+    .marquee-container::before,
+    .marquee-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 25%;
+        z-index: 2;
+    }
+
+    .marquee-container::before {
+        left: 0;
+        background: linear-gradient(to right, #D4E07B, rgba(255, 255, 255, 0));
+    }
+
+    .marquee-container::after {
+        right: 0;
+        background: linear-gradient(to left, #D4E07B, rgba(255, 255, 255, 0));
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
     /* ******* clientes ******* */
 
     .container-clientes{
         width: 100%;
-        height: 40vh;
+        height: 20vw;
         position: relative;
         display: flex;
         justify-content: center;
@@ -692,7 +746,7 @@
     
     .services-container {
         width: 100%;
-        height: 40vw;
+        height: 35vw;
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
@@ -888,7 +942,7 @@
 
     .services-container-2 {
         width: 100%;
-        height: 40vw;
+        height: 37vw;
         display: inline-flex;
         flex-direction: column;
     }
@@ -897,7 +951,7 @@
         width: 12%;
         height: 4vw;
         position: absolute;
-        top: 15%;
+        top: 18%;
         background: linear-gradient(101deg, #638638 0%, #C6D54F 69%);
         border-radius: 41.97px;
         border: 0px;
@@ -921,7 +975,7 @@
         align-items: center;
         display: inline-flex;
         position: relative;
-        top: 80%;
+        top: 60%;
     }
     
     .text-black-services2, 
@@ -952,7 +1006,7 @@
         width: 50%;
         height: 7vw;
         position: relative;
-        top: 100%;
+        top: 80%;
         border-radius: 20px;
         border: 2px #AFDDF2 solid;
     }
@@ -1046,7 +1100,212 @@
         line-height: 2vw;
         word-wrap: break-word;
     }
+
+    /* ******* preguntas y formulario ******* */
     
+    .container-preguntas-formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        height: 55vw;
+        position: relative;
+        gap: 4%;
+    }
+
+    .preguntas-container {
+        width: 40vw;
+        height: 50vw;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .preguntas-container::before,
+    .preguntas-container::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 20%;
+        z-index: 2;
+    }
+    
+    .preguntas-container::before {
+        top: 0;
+        background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+    }
+    
+    .preguntas-container::after {
+        bottom: 0;
+        background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
+    }
+    
+    .preguntas {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pregunta {
+        width: 80%;
+        height: 4vw;
+        padding: 2% 3%;
+        margin: 1% 0;
+        background: #E8F5FB;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.25vw;
+        line-height: 1.4;
+        transition: background 0.3s, transform 0.3s;
+    }
+    
+    .pregunta.central {
+        background: linear-gradient(145deg, #F5F7DF 0%, #E8F5FB 100%);
+        border: 2px solid #AFDDF2;
+        font-size: 1.5vw;
+        height: 6.8vw;
+    }
+    
+    .contacto-container {
+        width: 30vw;
+        height: 45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .contacto-header{
+        width: 80%;
+    }
+    
+    .contacto-header h2 {
+        color: #101011;
+        font-size: 1.2vw;
+        font-weight: 600;
+        line-height: 1.5vw;
+    }
+    
+    .contacto-header p {
+        color: #575957;
+        font-size: 1.0vw;
+        margin-top: 1vw;
+        line-height: 2.0vw;
+    }
+
+    .contacto-header p.conversemos {
+        color: #C6D54F;
+        font-size: 1.2vw;
+        margin-top: 1vw;
+        line-height: 2.0vw;
+    }
+    
+    .contacto-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto-form-fields{
+        width: 65%;
+        height: 33vw;
+        border: 2px #B0B2B1 solid;
+        border-radius: 2vw;
+        padding: 3% 6% 3% 6%;
+    }
+
+    .contacto-form-field{
+        margin-top: 1.4vw;
+    }
+    
+    .contacto-form label {
+        color: #000000;
+        font-size: 1.0vw;
+        margin-top: 1vw;
+    }
+    
+    .contacto-form input{
+        width: 96%;
+        padding: 0.7vw;
+        margin-top: 0.7vw;
+        border: 1px solid #B0B2B1;
+        border-radius: 6px;
+        font-size: 1.0vw;
+    }
+
+    .contacto-form select {
+        width: 100%;
+        padding: 0.7vw;
+        margin-top: 0.7vw;
+        border: 1px solid #B0B2B1;
+        border-radius: 6px;
+        font-size: 1.0vw;
+    }
+    
+    .contacto-form button {
+        width: 100%;
+        padding: 1vw;
+        margin-top: 2vw;
+        background-color: #C6D54F;
+        color: white;
+        font-size: 1.5vw;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    .contacto-note {
+        margin-top: 2vw;
+        width: 60%;
+        position: relative;
+        left: 10%;
+    }
+
+    .contacto-importante-l1 {
+        color: #808584;
+        font-size: 0.68vw;
+        font-weight: 700;
+        line-height: 0.95vw;
+        word-wrap: break-word;
+    }
+    
+    .contacto-importante-l2 {
+        color: #808584;
+        font-size: 0.68vw;
+        font-weight: 400;
+        line-height: 0.95vw;
+        word-wrap: break-word;
+    }
+    
+    .contacto-importante-l3 {
+        color: #9CB445;
+        font-size: 0.68vw;
+        font-weight: 400;
+        line-height: 0.95vw;
+        word-wrap: break-word;
+    }
+    
+    .contacto-importante-l4 {
+        color: #808584;
+        font-size: 0.68vw;
+        font-weight: 400;
+        line-height: 0.95vw;
+        word-wrap: break-word;
+    }
+
+    .container-ubicacion-oficinas{
+        width: 100%;
+        height: 28vw;
+        background-image: url('../assets/img/fondo_ubicacion_oficinas.png');
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 
@@ -1063,7 +1322,7 @@ html, body, footer {
 
 .header-container {
     width: 100%;
-    height: 10vh;
+    height: 10vw;
     padding: 0 5%;
     background: white;
     display: flex;
@@ -1086,14 +1345,4 @@ html, body, footer {
 
 .nav-item {
     cursor: pointer;
-}
-
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
 }

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-
+    
     document.getElementById('menu-icon').addEventListener('click', function() {
         var mobileNav = document.getElementById('mobile-nav');
         mobileNav.classList.toggle('show');
@@ -96,6 +96,8 @@ function elementosInicialesNosotros() {
     document.getElementById('img-nube').src = '../assets/img/icono_servicios_nube_white.svg'
     document.getElementById('img-ciberseguridad').src = '../assets/img/icono_ciberseguridad_white.svg'
     document.getElementById('img-nearshoring').src = '../assets/img/icono_nearshoring_white.svg'
+
+    movePreguntas();
 }
 
 function showContent(service) {
@@ -156,4 +158,42 @@ function showContent(service) {
         document.getElementById('img-ciberseguridad').src = '../assets/img/icono_ciberseguridad_white.svg'
         document.getElementById('img-nearshoring').src = '../assets/img/icono_nearshoring.svg'
     }
+}
+
+function movePreguntas() {
+    const preguntas = [
+        "¿Quieres mejorar la gestión operativa de tu empresa?",
+        "¿Te falta visibilidad en tiempo real del desempeño de toda la empresa?",
+        "¿Tu empresa tiene necesidades únicas y específicas?",
+        "¿Tus procesos financieros son manuales y propensos a errores?",
+        "¿Necesitas mejorar la escalabilidad y eficiencia de tu empresa?",
+        "¿Te preocupa la seguridad y la protección de los datos de tu empresa?",
+        "¿Te cuesta trabajo gestionar varios proyectos tecnológicos al mismo tiempo?",
+        "¿Tus empleados se resisten a los cambios tecnológicos?",
+        "¿Tu cadena de suministro tiene ineficiencias que afectan la operación?",
+        "¿Hay falta de coordinación y comunicación entre tus equipos?",
+        "¿Valoras la flexibilidad y la personalización de una solución a la medida?",
+        "¿Gestionar los riesgos laborales y la seguridad física es un dolor de cabeza?",
+        "¿Te resulta difícil gestionar el talento y los procesos de reclutamiento?",
+        "¿Gestionar la infraestructura de TI es una tarea complicada y lenta?"
+    ];
+
+    const preguntasContainer = document.querySelector('.preguntas');
+
+    preguntas.forEach((pregunta, index) => {
+        const preguntaDiv = document.createElement('div');
+        preguntaDiv.classList.add('pregunta');
+        if (index === 3) {
+            preguntaDiv.classList.add('central');
+        }
+        preguntaDiv.innerText = pregunta;
+        preguntasContainer.appendChild(preguntaDiv);
+    });
+
+    setInterval(() => {
+        const firstPregunta = preguntasContainer.firstElementChild;
+        preguntasContainer.appendChild(firstPregunta);
+        preguntasContainer.children[3].classList.add('central');
+        preguntasContainer.children[2].classList.remove('central');
+    }, 4500);
 }
