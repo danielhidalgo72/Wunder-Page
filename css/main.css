@@ -87,7 +87,6 @@
         border: 0px;
         color: white;
         font-size: 2.5vw;
-        font-family: Inter;
         font-weight: 500;
         line-height: 3vw;
         text-align: center;
@@ -1115,9 +1114,10 @@
 
     .preguntas-container {
         width: 40vw;
-        height: 50vw;
+        height: 48vw;
         overflow: hidden;
         position: relative;
+        bottom: 2%;
     }
     
     .preguntas-container::before,
@@ -1299,6 +1299,8 @@
         word-wrap: break-word;
     }
 
+    /* ******* ubicación oficinas ******* */
+
     .container-ubicacion-oficinas{
         width: 100%;
         height: 28vw;
@@ -1306,6 +1308,309 @@
         background-size: cover;
         background-position: center;
     }
+    
+    .titles-ubicacion-oficinas {
+        width: 100%;
+        height: auto;
+        padding: 0.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 5%;
+        gap: 2%;
+    }
+
+    .paises-ubicacion-oficinas {
+        width: 100%;
+        height: auto;
+        padding: 0.5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 13%;
+        left: 2%;
+        gap: 2%;
+    }
+
+    .office-ubicacion-oficinas {
+        width: 18vw;
+        height: 3vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+    }
+    
+    .coming-soon-ubicacion-oficinas {
+        color: #AFDDF2;
+        font-weight: 400;
+    }
+    
+    .main-title-ubicacion-oficinas {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 2.5vw;
+        font-weight: 700;
+        line-height: 4.25vw;
+        word-wrap: break-word;
+    }
+    
+    .subtitle-ubicacion-oficinas {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 1.146vw;
+        font-weight: 400;
+        line-height: 2.604vw;
+        word-wrap: break-word;
+    }
+    
+    .footer-text-ubicacion-oficinas {
+        width: 100%;
+        position: relative;
+        top: 30%;
+        text-align: center;
+        color: white;
+        font-size: 1.042vw;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.458vw;
+        opacity: 0.6;
+        word-wrap: break-word;
+    }
+    
+    .office-text-ubicacion-oficinas {
+        width: 100%;
+        color: white;
+        font-size: 0.938vw;
+        font-weight: 600;
+        line-height: 1.313vw;
+        word-wrap: break-word;
+    }
+
+    /* ******* socio estratégico ******* */
+
+    .contenedor-socio-estrategico {
+        width: 100vw;
+        height: 58vw;
+        position: relative;
+        background: white;
+    }
+    
+    .seccion-socio-estrategico {
+        width: 80vw;
+        position: absolute;
+        left: 8.33vw;
+        top: 59vw;
+        display: flex;
+        gap: 2.78vw;
+    }
+    
+    .tarjeta-socio-estrategico {
+        width: 30%;
+        height: 28.52vw;
+        padding: 2.08vw 2.78vw;
+        background: linear-gradient(180deg, #EBF0C2 0%, white 100%);
+        border-radius: 1.11vw;
+        border: 0.10vw white solid;
+        display: flex;
+        flex-direction: column;
+        gap: 1.04vw;
+    }
+    
+    .icono-circular-socio-estrategico {
+        width: 4.44vw;
+        height: 4.44vw;
+        padding: 1.04vw;
+        background: #F9FBED;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contenido-tarjeta-socio-estrategico {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.11vw;
+    }
+    
+    .titulo-socio-estrategico {
+        color: #101011;
+        font-size: 1.67vw;
+        font-weight: 600;
+        line-height: 2.33vw;
+    }
+    
+    .descripcion-socio-estrategico {
+        color: #101011;
+        font-size: 1.25vw;
+        font-weight: 400;
+        line-height: 1.75vw;
+    }
+    
+    .imagen-socio-estrategico {
+        width: 34.44vw;
+        height: 28vw;
+        position: absolute;
+        left: 62.71vw;
+        top: 13.15vw;
+    }
+    
+    .imagen-socio-estrategico img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .texto-socio-estrategico {
+        position: relative;
+        left: 8.33vw;
+        top: 11.30vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+    
+    .titulo-principal-socio-estrategico {
+        font-size: 3.33vw;
+        font-weight: 700;
+        line-height: 4vw;
+        color: #101011;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .resaltado-socio-estrategico {
+        color: #C6D54F;
+    }
+
+    .subtitulo-socio-estrategico {
+        width: 40%;
+        color: #575957;
+        font-size: 1.53vw;
+        font-weight: 400;
+        line-height: 2.13vw;
+        position: relative;
+        top: 3%;
+    }
+    
+    .pregunta-socio-estrategico {
+        color: #575957;
+        font-size: 1.53vw;
+        font-weight: bold;
+        line-height: 2.13vw;
+        font: optional;
+        position: relative;
+        top: 1.5vw;
+    }
+
+    .explicacion-socio-estrategico {
+        color: #575957;
+        font-size: 1.53vw;
+        font-weight: 400;
+        line-height: 2.13vw;
+        width: 36.88vw;
+        position: relative;
+        top: 3%;
+    }   
+    
+    /* ******* nuestra experiencia (gif mapa clientes en el mundo) ******* */
+    .contenedor-nuestra-experiencia {
+        width: 100%;
+        height: 49.65vw;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 3.68vw;
+    }
+    
+    .contenido-nuestra-experiencia {
+        width: 83.33vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.78vw;
+    }
+    
+    .titulo-nuestra-experiencia {
+        width: 100%;
+        color: #00112D;
+        font-size: 3.33vw;
+        font-weight: 700;
+        line-height: 4.33vw;
+        text-align: center;
+    }
+    
+    .elementos-nuestra-experiencia {
+        display: flex;
+        justify-content: center;
+        gap: 4.38vw;
+    }
+    
+    .tarjeta-nuestra-experiencia {
+        width: 19.10vw;
+        height: 6.60vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fondo-tarjeta-nuestra-experiencia {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: linear-gradient(278deg, #1A9DD9 13%, #21428F 87%);
+        border-radius: 15px;
+    }
+    
+    .numero-tarjeta-nuestra-experiencia, .descripcion-tarjeta-nuestra-experiencia, .subtitulo-tarjeta-nuestra-experiencia {
+        position: absolute;
+        color: white;
+        word-wrap: break-word;
+    }
+    
+    .numero-tarjeta-nuestra-experiencia {
+        top: 2.15vw;
+        left: 2.64vw; 
+        font-size: 2.57vw;
+        font-weight: 700;
+        line-height: 3.34vw;
+    }
+    
+    .descripcion-tarjeta-nuestra-experiencia {
+        top: 2.85vw;
+        left: 6.88vw;
+        font-size: 1.60vw;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .subtitulo-tarjeta-nuestra-experiencia {
+        top: 1.18vw;
+        left: 2.64vw;
+        width: 5.49vw;
+        height: 1.04vw;
+        font-size: 0.76vw;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .imagen-nuestra-experiencia {
+        width: 49.31vw;
+        height: 24.65vw;
+    }    
 }
 
 
